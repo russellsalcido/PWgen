@@ -1,0 +1,58 @@
+kpublic static int getRandomNumberInts(int min, int max){
+  Random random = new Random();
+  return random.ints(min,(max+1)).findFirst().getAsInt();
+}
+System.out.println("Random int stream: RandomIntStreamofSize = ");
+RandomDemo.getStreamOfRandomInts(5);
+
+<!-- The code to use the Random.ints() method to generate a stream of specified random integer values is: -->
+
+public static void getStreamOfRandomIntsWithRange(int num, int min, int max) {
+  Random random = new Random();
+  random.ints(num,min, max).sorted().forEach(System.out::println);
+}
+System.out.println("Random int stream of specified size in range: RandomIntStreamofSizeInRange = ");
+RandomDemo.getStreamOfRandomIntsWithRange(5,0,10);
+
+<!-- Password special characters is a selection of punctuation characters that are present on standard US keyboard and frequently used in passwords.-->
+
+" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
+<!-- letter generater -->
+
+function generateRandSeq(len, letters)
+// Assumes: len >= 0
+// Returns: random sequence of letters, length len
+{
+    var i, seq = "";
+    for (i = 1; i <= len; i = i + 1) {
+        seq += randomChar(letters);
+    }
+    return seq;
+    
+  }
+  
+  <!-- Define number of characters -->
+
+  var myArray = [
+  "Apples",
+  "Bananas",
+  "Pears"
+];
+
+<!-- variable random item -->
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+<!-- JS -->
+var myArray = [
+  "Apples",
+  "Bananas",
+  "Pears"
+];
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+<!-- JavaScript doesn’t support functions that return multiple values. However, you can wrap multiple values into an array or an object and return the array or the object.
+Use destructuring assignment syntax to unpack values from the array, or properties from objects. -->
+
