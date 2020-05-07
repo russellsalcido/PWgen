@@ -1,4 +1,4 @@
-kpublic static int getRandomNumberInts(int min, int max){
+public static int getRandomNumberInts(int min, int max){
   Random random = new Random();
   return random.ints(min,(max+1)).findFirst().getAsInt();
 }
@@ -56,3 +56,6 @@ var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 <!-- JavaScript doesn’t support functions that return multiple values. However, you can wrap multiple values into an array or an object and return the array or the object.
 Use destructuring assignment syntax to unpack values from the array, or properties from objects. -->
 
+<!-- Next: uppercase/lowercase gen, JS to allow button func, research how to end cycle once criteria has been met. Needs vars for input selection.
+    
+    Try to create a function that prompts for length, creates random gen into arrays, returns  -->
