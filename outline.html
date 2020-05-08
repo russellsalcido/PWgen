@@ -5,51 +5,29 @@ public static int getRandomNumberInts(int min, int max){
 System.out.println("Random int stream: RandomIntStreamofSize = ");
 RandomDemo.getStreamOfRandomInts(5);
 
-<!-- The code to use the Random.ints() method to generate a stream of specified random integer values is: -->
+<!-- Define number of characters -->
 
-public static void getStreamOfRandomIntsWithRange(int num, int min, int max) {
-  Random random = new Random();
-  random.ints(num,min, max).sorted().forEach(System.out::println);
-}
-System.out.println("Random int stream of specified size in range: RandomIntStreamofSizeInRange = ");
-RandomDemo.getStreamOfRandomIntsWithRange(5,0,10);
-
-<!-- Password special characters is a selection of punctuation characters that are present on standard US keyboard and frequently used in passwords.-->
-
-" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-
-<!-- letter generater -->
-
-function generateRandSeq(len, letters)
-// Assumes: len >= 0
-// Returns: random sequence of letters, length len
-{
-    var i, seq = "";
-    for (i = 1; i <= len; i = i + 1) {
-        seq += randomChar(letters);
-    }
-    return seq;
-    
-  }
-  
-  <!-- Define number of characters -->
-
-  var myArray = [
-  "Apples",
-  "Bananas",
-  "Pears"
-];
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 
 <!-- variable random item -->
 
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
 <!-- JS -->
-var myArray = [
-  "Apples",
-  "Bananas",
-  "Pears"
-];
+
+var up = document.getElementById('GFG_UP');  
+var down = document.getElementById('GFG_DOWN');  
+  
+var arr = ["GFG_1", "GeeksForGeeks", 
+        "Geeks", "Computer Science Portal"]; 
+  
+up.innerHTML = "Click on the button to check " 
+       + "the type of element.<br><br>" + arr; 
+  
+function GFG_Fun() { 
+    down.innerHTML =  
+        arr[Math.floor(Math.random() * arr.length)]; 
+}  
 
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
@@ -59,3 +37,5 @@ Use destructuring assignment syntax to unpack values from the array, or properti
 <!-- Next: uppercase/lowercase gen, JS to allow button func, research how to end cycle once criteria has been met. Needs vars for input selection.
     
     Try to create a function that prompts for length, creates random gen into arrays, returns  -->
+
+    "Congratulations!\nYou are now onestep closer to securing your future.\n\nPlease enter the number of characters you would like to generate.\n\nIn other words, how long do you want your password to be?\nChoose\nNo less than 8\nNo more than 128"
